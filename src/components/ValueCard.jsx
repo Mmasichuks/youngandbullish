@@ -26,12 +26,12 @@ const fadeInUp = {
 
 const ValueCard = (props ) => (
     <motion.div
-      className="bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-blue-500/10 h-full"
+      className="bg-gray-200 backdrop-blur-lg p-6 rounded-xl border border-blue-500/10 h-full"
       variants={fadeInUp}
     >
-    {props.icon && <props.icon/>}
-      <h3 className="text-lg font-semibold mb-2">{props.title}</h3>
-      <p className="text-gray-300">{props.description}</p>
+    {props.icon && <props.icon className="text-orange-500"/>}
+      <h3 className="text-lg text-primary font-semibold mb-2">{props.title}</h3>
+      <p className="text-primary">{props.description}</p>
     </motion.div>
 );
 export default ValueCard;

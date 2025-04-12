@@ -1,10 +1,10 @@
 
 import React,{ useState } from "react";
-import { Menu, X, Home,Phone,ContactRound  } from "lucide-react";
+import { Menu, X, Home,Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const Navigation = () => {
+const W_navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [Open, setOpen] = useState(false);
     const Toggle = () => {
@@ -13,12 +13,12 @@ const Navigation = () => {
   }
   
     return (
-      <nav className="sticky top-0 left-0 right-0 bg-dark rounded-b-3xl shadow-md shadow-gray-900 border-blue-500/10 z-50">
+      <nav className="sticky top-0 left-0 right-0 bg-gray-100 rounded-b-3xl shadow-md  shadow-gray-400 z-50">
         <div className=" max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className=" flex items-center justify-between h-20">
             <div className=" flex items-center ">
-            <img src="src/assets/ei_1742071493270-removebg-preview (1).png" alt="" className="w-70" />
-              <span className="text-xl font-bold text-white">
+            <img src="src/assets/bluelogo.png" alt="" className="w-70" />
+              <span className="text-xl font-bold text-primary">
                
                 
               </span>
@@ -26,7 +26,7 @@ const Navigation = () => {
             <div className=" hidden md:flex items-center space-x-16">
              <Link to = "/"><a
                 href="#"
-                className="text-gray-300  text-xl hover:font-bold flex   hover:text-blue-500  transition-colors"
+                className="text-primary  text-xl hover:font-bold flex   hover:text-blue-500  transition-colors"
               ><Home className="size-5 mt-1.5 mr-1"/> Home
                
               </a>
@@ -34,15 +34,15 @@ const Navigation = () => {
               <Link  to ="/About">
               <a
                 href="#"
-                className="text-gray-300 flex text-xl hover:text-blue-500 hover:font-bold transition-colors"
+                className="text-primary flex text-xl hover:text-blue-500 hover:font-bold transition-colors"
               >
-               <img src="src/assets/multicontact.png" className="size-7" alt="" /> About Us
+               <img src="src/assets/multicontact.png" alt="" className="size-8 text-primary" /> About Us
               </a></Link>
               <Link  to ="/Contact">
               <a
                 href="#"
-                className="text-gray-300  flex text-xl hover:text-blue-500 hover:font-bold transition-colors"
-              ><Phone className="size-5 mr-1 mt-1.5"/>
+                className="text-primary text-xl flex hover:text-blue-500 hover:font-bold transition-colors"
+              > <Phone className="size-5 mr-1 mt-1.5"/>
                 Contact Us
               </a></Link>
             <br /><br /><br />
@@ -105,4 +105,4 @@ const Navigation = () => {
       </nav>
     );
 };
-export default Navigation;
+export default W_navigation;
