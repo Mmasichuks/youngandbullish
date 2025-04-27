@@ -45,62 +45,59 @@ const Navigation = () => {
               ><Phone className="size-5 mr-1 mt-1.5"/>
                 Contact Us
               </a></Link>
-            <br /><br /><br />
             </div>
-            {Open ? (
-          <ul className="bg-gray-500 w-30 fixed text-center rounded-xl  top-23 right-20">
-            <li className='hover:bg-blue-500 font-sans font-semibold p-2 '>x</li>
-            <li className='hover:bg-blue-500 font-sans font-semibold p-2 ' >whatsapp</li>
-            <li className='hover:bg-blue-500 font-sans font-semibold p-2 ' >instagram</li>
-          </ul>
-        ) :null}
             <div className="md:hidden">
-              <button
-                className="text-gray-300 hover:text-white"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                {isOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-        {isOpen && (
-          <motion.div
-            className="md:hidden bg-gray-900/95 backdrop-blur-lg"
-            initial={{
-              opacity: 0,
-              y: -20,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-          >
-            <div className="px-4 pt-2 pb-4 space-y-3 bg">
-              <Link to={"/"}>
-              <a
-                href="#"
-                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-orange-400 rounded-full"
-              >
-                Home
-              </a></Link>
-            <Link to={"/about"}>
-              <a
-
-                href="#"
-                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-orange-400 rounded-full"
-              >
-                About Us
-              </a> </Link>
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm transition-colors">
-                Join Community
-              </button>
-            </div>
-          </motion.div>
+            <button
+                            className="text-white hover:text-orange-500"
+                            onClick={() => setIsOpen(!isOpen)}
+                          >
+                            {isOpen ? (
+                              <X className="h-6 w-6" />
+                            ) : (
+                              <Menu className="h-6 w-6" />
+                            )}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    {isOpen && (
+                      <motion.div
+                        className="md:hidden bg-blue/95 backdrop-blur-lg"
+                        initial={{
+                          opacity: 0,
+                          y: -20,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                        }}
+                      >
+                        <div className="px-4 pt-2 pb-4 space-y-3 bg">
+                          <Link to={"/"}>
+                          <a
+                            href="#"
+                            className="block text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-blue-600 rounded-full"
+                          >
+                            Home
+                          </a></Link>
+                        <Link to={"/about"}>
+                          <a
+            
+                            href="#"
+                            className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
+                          >
+                            About Us
+                          </a> </Link>
+                          <Link to={"/Contact"}>
+                          <a
+            
+                            href="#"
+                            className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
+                          >
+                            Contact Us
+                          </a> </Link>
+                        </div>
+                      </motion.div>
         )}
       </nav>
     );

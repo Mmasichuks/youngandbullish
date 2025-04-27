@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   ArrowRight,
   TrendingUp,
@@ -13,7 +14,7 @@ import W_footer from "../components/W_footer.jsx";
 import W_navigation from "../components/W_navigation.jsx";
 import ValueCard from "../components/ValueCard";
 import Dropdown from "../components/Dropdown";
-import { motion } from "framer-motion";
+import { delay, easeIn, motion } from "framer-motion";
 const fadeInUp = {
   initial: {
     opacity: 0,
@@ -34,6 +35,14 @@ const staggerChildren = {
     },
   },
 };
+const logoAnimation = {
+  hidden: { rotate: -180 },
+  visible: {
+    rotate: 0,
+    transition: { duration: 1 },
+    delay:2
+  }
+}
 // navigation section
 
 
@@ -45,11 +54,12 @@ function LandingPage() {
    //const [Open, setOpen] = useState(false)
   return (
     <>
-    <div className="min-h-screen w-full bg-primary backdrop-contrast-75 text-white">
+    
+    <div className="min-h-screen w-full bg-dark backdrop-contrast-75 text-white">
       <W_navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  pb-16">
+      <main className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8  pb-16">
         <motion.div
-          className="text-center mb-12 relative bottom-25"
+          className="text-center justify-items-center  mb-12 relative bottom-25"
           initial={{
             opacity: 0,
             y: 20,
@@ -58,16 +68,29 @@ function LandingPage() {
             opacity: 1,
             y: 0,
           }}
-          viewport={{
-            once: true,
-          }}
+
           transition={{
             duration: 0.6,
           }}
         >
-          <img src="src/assets/y&b_logo.png" alt="y&b logo" className="relative left-100 top-17  lg:size-80 sm:size-12" />
           
-          <h1 className="text-3xl  sm:text-4xl md:text-6xl font-bold mb-8">
+          <motion.img src="src/assets/y&b_logo.png" alt="y&b logo"
+              initial={{y:0}}
+              animate={{
+                y: [0, -40, 0,
+                ],
+              }}
+              transition={{
+                delay: .5,
+                duration: 2,
+                repeat:Infinity ,
+                repeatType:'loop',
+                ease:'easeOut'
+                
+              }}
+           className="relative right-14 low-bounce 2s infinite   sm:right-20 top-20 size-70 sm:size-90" />
+        
+          <h1 className="text-3xl font-mochiy  sm:text-4xl md:text-6xl font-bold mb-3">
           Young<span className="text-orange-400">and</span>Bullish
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
@@ -83,9 +106,6 @@ function LandingPage() {
           variants={staggerChildren}
           initial="initial"
           whileInView="animate"
-          viewport={{
-            once: true,
-          }}
         >
           {[
     {
@@ -102,11 +122,12 @@ function LandingPage() {
   ].map((item, index) => (
     <motion.div
       key={index}
-      className="text-center p-6 sm:p-8 bg-gray-200 shadow-lg shadow-gray-500 backdrop-blur-lg rounded-xl    transition-colors"
       variants={fadeInUp}
+      className="text-center p-6 sm:p-8 bg-gray-200 shadow-lg shadow-gray-500 backdrop-blur-lg rounded-xl    transition-colors"
+     
     >
       <item.icon className="w-8 h-8 text-green-500 mx-auto mb-4" />
-      <div className="text-2xl text-primary sm:text-3xl font-bold mb-2">
+      <div className="text-2xl text-blue sm:text-3xl font-bold mb-2">
         {item.stat}
       </div>
       <div className="text-primary">{item.label}</div>
@@ -124,9 +145,7 @@ function LandingPage() {
             whileInView={{
               opacity: 1,
             }}
-            viewport={{
-              once: true,
-            }}
+          
           >
             Our Values
           </motion.h2>
@@ -135,9 +154,7 @@ function LandingPage() {
             variants={staggerChildren}
             initial="initial"
             whileInView="animate"
-            viewport={{
-              once: true,
-            }}
+          
           >
             <ValueCard
               icon={Target}

@@ -29,12 +29,12 @@ const W_footer = () => {
                  <img src="src/assets/ei_1742071493270-removebg-preview (1).png" alt="" className='relative bottom-16 size-50' />
               </a>
           </div>
-          <div className="grid grid-cols-3 gap-2 sm:gap-22 sm:grid-cols-5 sm:relative  ">
+          <div className="grid grid-cols-4 gap-2 md:gap-22 md:grid-cols-5 sm:relative  ">
          
                               <div>
                   <h2 className="mt-3  font-bold  uppercase text-orange-400">About us</h2>
                   <ul className="text-white  font-medium">
-                  <Link to='/About'><li className="mb-4">
+                  <Link to='/About'><li className="my-4">
                          <a href="" className="hover:underline">Team</a>
                       </li> </Link>
                       <li>
@@ -45,7 +45,7 @@ const W_footer = () => {
               <div>
                   <h2 className="mt-3 text-lg font-semibold  uppercase text-green-500">Follow us</h2>
                   <ul className="text-white font-medium">
-                      <li className="mb-4">
+                      <li className="my-4">
                           <a href="https://github.com/themesberg/flowbite" className="hover:underline ">X</a>
                       </li>
                       <li className='mb-4'>
@@ -56,10 +56,10 @@ const W_footer = () => {
                       </li>
                   </ul>
               </div>
-                              <div className="contact_btn text-2xl absolute left-104 top-25 bg-white text-primary font-semibold p-2 rounded-lg">
+                              <div className="contact_btn text-2xl absolute left-80 md:left-104  md:top-25 bg-white text-primary font-semibold p-2 rounded-lg">
                                   <button className=''>Contact Us</button>
              </div>
-              <div className="flex absolute top-30 left-160  ">
+              <div className="flex absolute top-290  md:top-30  md:left-160  ">
               <a href="#" className="text-gray-500 hover:text-white hover:animate-bounce">
                   <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                         <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>

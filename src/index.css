@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import "tailwindcss";
 
 @theme{
-    --color-primary: #030666;
+    --color-blue: #030666;
     --color-dark: #020255;
+    ---font-red: 'Itims',sans-serif;
 }

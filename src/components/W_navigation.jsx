@@ -18,7 +18,7 @@ const W_navigation = () => {
           <div className=" flex items-center justify-between h-20">
             <div className=" flex items-center ">
             <img src="src/assets/bluelogo.png" alt="" className="w-70" />
-              <span className="text-xl font-bold text-primary">
+              <span className="text-xl font-bold text-blue">
                
                 
               </span>
@@ -26,7 +26,7 @@ const W_navigation = () => {
             <div className=" hidden md:flex items-center space-x-16">
              <Link to = "/"><a
                 href="#"
-                className="text-primary  text-xl hover:font-bold flex   hover:text-blue-500  transition-colors"
+                className="text-blue  text-xl hover:font-bold flex   hover:text-blue-500  transition-colors"
               ><Home className="size-5 mt-1.5 mr-1"/> Home
                
               </a>
@@ -34,29 +34,23 @@ const W_navigation = () => {
               <Link  to ="/About">
               <a
                 href="#"
-                className="text-primary flex text-xl hover:text-blue-500 hover:font-bold transition-colors"
+                className="text-blue flex text-xl hover:text-blue-500 hover:font-bold transition-colors"
               >
-               <img src="src/assets/multicontact.png" alt="" className="size-8 text-primary" /> About Us
+               <img src="src/assets/multicontact.png" alt="" className="size-8 text-blue" /> About Us
               </a></Link>
               <Link  to ="/Contact">
               <a
                 href="#"
-                className="text-primary text-xl flex hover:text-blue-500 hover:font-bold transition-colors"
+                className="text-blue text-xl flex hover:text-blue-500 hover:font-bold transition-colors"
               > <Phone className="size-5 mr-1 mt-1.5"/>
                 Contact Us
               </a></Link>
-            <br /><br /><br />
+            
             </div>
-            {Open ? (
-          <ul className="bg-gray-500 w-30 fixed text-center rounded-xl  top-23 right-20">
-            <li className='hover:bg-blue-500 font-sans font-semibold p-2 '>x</li>
-            <li className='hover:bg-blue-500 font-sans font-semibold p-2 ' >whatsapp</li>
-            <li className='hover:bg-blue-500 font-sans font-semibold p-2 ' >instagram</li>
-          </ul>
-        ) :null}
+        
             <div className="md:hidden">
               <button
-                className="text-gray-300 hover:text-white"
+                className="text-blue hover:text-orange-500"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 {isOpen ? (
@@ -70,7 +64,7 @@ const W_navigation = () => {
         </div>
         {isOpen && (
           <motion.div
-            className="md:hidden bg-gray-900/95 backdrop-blur-lg"
+            className="md:hidden bg-blue/95 backdrop-blur-lg"
             initial={{
               opacity: 0,
               y: -20,
@@ -84,7 +78,7 @@ const W_navigation = () => {
               <Link to={"/"}>
               <a
                 href="#"
-                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-orange-400 rounded-full"
+                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-blue-600 rounded-full"
               >
                 Home
               </a></Link>
@@ -92,13 +86,18 @@ const W_navigation = () => {
               <a
 
                 href="#"
-                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-orange-400 rounded-full"
+                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
               >
                 About Us
               </a> </Link>
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm transition-colors">
-                Join Community
-              </button>
+              <Link to={"/Contact"}>
+              <a
+
+                href="#"
+                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
+              >
+                Contact Us
+              </a> </Link>
             </div>
           </motion.div>
         )}
