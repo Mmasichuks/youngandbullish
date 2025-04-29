@@ -81,19 +81,19 @@ function LandingPage() {
                 ],
               }}
               transition={{
-                delay: .5,
+                delay: 2,
                 duration: 2,
                 repeat:Infinity ,
                 repeatType:'loop',
                 ease:'easeOut'
                 
               }}
-           className="relative right-14 low-bounce 2s infinite   sm:right-20 top-20 size-70 sm:size-90" />
+           className="relative right-14 sm:right-20 top-20 size-65 sm:size-90" />
         
-          <h1 className="text-3xl font-mochiy  sm:text-4xl md:text-6xl font-bold mb-3">
+          <h1 className="text-3xl   sm:text-4xl md:text-6xl font-bold mb-3">
           Young<span className="text-orange-400">and</span>Bullish
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-lg font-p sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Proving you don't need fraud to make it big. Brace yourself are you ready to be young and bullish.
           </p>
         

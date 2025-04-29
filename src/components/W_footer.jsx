@@ -26,13 +26,13 @@ const W_footer = () => {
             <div className="md:flex  justify-between ">
             <div className="ml-20">
               <a href="" className="flex items-center">
-                 <img src="src/assets/bluelogo.png" alt="" className='relative bottom-16 size-50' />
+                 <img src="src/assets/bluelogo.png" alt="" className='relative bottom-16 left-20 size-50' />
               </a>
           </div>
-          <div className="grid grid-cols-2 text-center gap-2 md:gap-22 md:grid-cols-5  sm:relative  ">
+          <div className="grid grid-cols-2 text-center gap-0.2 md:gap-22 md:grid-cols-5  sm:relative  ">
          
-                              <div>
-                  <h2 className="mt-3  font-bold  uppercase text-orange-400">About us</h2>
+                              <div className='relative bottom-25 md:bottom-0'>
+                  <h2 className="mt-3  text-lg font-semibold   uppercase text-orange-400">About us</h2>
                   <ul className="text-blue  font-medium">
                   <Link to='/About'><li className="my-4 ">
                          <a href="" className="hover:underline">Team</a>
@@ -42,7 +42,7 @@ const W_footer = () => {
                       </li>
                   </ul>
               </div>
-              <div>
+              <div className='relative bottom-25 md:bottom-0'>
                   <h2 className="mt-3 text-lg font-semibold  uppercase text-green-500">Follow us</h2>
                   <ul className="text-blue font-medium">
                       <li className="my-4">
@@ -54,12 +54,12 @@ const W_footer = () => {
                       <li >
                           <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">YouTube</a>
                       </li>
-                  </ul>
+                  </ul> 
               </div>
-                              <div className="contact_btn text-2xl relative md:absolute left-4 md:left-104 top-.5 md:top-25 focus:bg-blue/35 bg-dark text-white p-2 rounded-lg">
-                                  <button>Contact Us</button>
+                              <div className="contact_btn text-2xl flex justify-center  ">
+                                  <button className='relative md:absolute left-30  md:left-104 bottom-23  md:bottom-10 md:top-25 focus:bg-blue/35 bg-dark text-white p-2 rounded-lg'>Contact Us</button>
              </div>
-              <div className="flex relative md:absolute  top-6 md:top-30 left-10 md:left-160 ">
+              <div className="flex relative md:absolute top-6  md:top-30 left-30 md:left-160 ">
               <a href="#" className="text-gray-500 hover:text-blue hover:animate-bounce">
                   <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                         <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>

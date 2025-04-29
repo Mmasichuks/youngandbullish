@@ -76,8 +76,8 @@ const Navigation = () => {
                           <Link to={"/"}>
                           <a
                             href="#"
-                            className="block text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-blue-600 rounded-full"
-                          >
+                            className="flex text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-blue-600 rounded-full"
+                          ><Home className="size-5 mt-1.5 mr-3"/>
                             Home
                           </a></Link>
                         <Link to={"/about"}>
@@ -92,8 +92,8 @@ const Navigation = () => {
                           <a
             
                             href="#"
-                            className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
-                          >
+                            className="flex text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
+                          > <Phone className="size-4 mr-3 mt-1.5"/>
                             Contact Us
                           </a> </Link>
                         </div>

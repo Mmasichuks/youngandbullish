@@ -14,21 +14,21 @@ function About() {
             <div className="min-h-screen w-full bg-gray-200 text-primary transition-all">
             <Navigation />
                 <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
-                    <p className="text-4xl text-center mb-20">We are all about Sharing & Building Web3 stories.</p>
-                    <div className="bg-amber-100 p-7 grid lg:grid-cols-3 gap-6 sm:grid-cols-1 md:grid-cols-2 ">
+                    <p className="md:text-4xl text-2xl  animate-bounce font-sans font-semibold text-center mb-20 ">We are all about Sharing & Building <br className="md:hidden" /> Web3 Success stories.</p>
+                    <div className="bg-amber-100 py-17 rounded-2xl px-0 md:px-6 pl-0 md:pl-11 grid lg:grid-cols-3 gap-24 md:gap-6 sm:grid-cols-1 md:grid-cols-2  justify-center "> 
                         <motion.div className=" sm:text-lg font-bold  size-fit "
                         initial={{
                             opacity: 0,
                             y:100,
                         }}
-                        animate={{
+                        whileInView={{
                             y: 0,
                             opacity: 1,
                             
                         }}
                         transition={{
                             
-                            duration:3
+                            duration:3,delay:0.5
                             }}
                         >
                         <p className=" text-3xl text-center font-bold py-6 outline-5 outline-stone-700">Who Are We </p>
@@ -47,16 +47,16 @@ function About() {
                             className=" sm:text-lg font-bold w-fit"
                             initial={{
                                 opacity: 0,
-                                y:-90,
+                                y:100,
                             }}
-                            animate={{
+                            whileInView={{
                                 y: 0,
                                 opacity: 1,
                                 
                             }}
                             transition={{
                                 
-                                duration:3
+                                duration:3, delay:0.5
                           }}>
                         <p className=" text-3xl text-center font-bold py-6 outline-5 outline-stone-700">What We Do </p>
                      <div className="text-white shadow-2xl hover:scale-110 font-family transition-all shadow-gray-600 p-6 sm:p-10 bg-blue backdrop-blur-lg rounded-xl w-85  leading-10"
@@ -68,22 +68,22 @@ function About() {
                           </div>
                     </motion.div>
                 
-                        <motion.div className=" sm:text-lg font-bold w-fit "
+                        <motion.div className=" sm:text-lg font-bold w-fit text-center "
                             initial={{
                                 opacity: 0,
                                 y:100,
                             }}
-                            animate={{
+                             whileInView={{
                                 y: 0,
                                 opacity: 1,
                                 
                             }}
                             transition={{
                                 
-                                duration:3
+                                duration:3,delay:0.5
                           }}>
                         <p className=" text-3xl text-center font-bold py-6 outline-5 outline-stone-700">Why It Matters </p>
-                     <div className="text-white shadow-2xl hover:scale-110 transition-all shadow-gray-600 p-6 sm:p-8 bg-green-500 backdrop-grayscale-100 rounded-xl w-fit leading-9"
+                     <div className="text-white shadow-2xl hover:scale-110 transition-all shadow-gray-600 p-6 sm:p-8 bg-green-500 backdrop-grayscale-100 rounded-xl w-86 leading-9"
                           >
                             <p>In a country where young people often feel that fraud is the only way to financial
                                 freedom. Young and bullish is breaking the narrative. We are here to prove that there is a legitimate ways
