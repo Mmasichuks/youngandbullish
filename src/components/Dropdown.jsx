@@ -25,7 +25,11 @@ const Dropdown = () => {
       
       {showPopup && (
         <div className="absolute top-10 left-5 w-full h-full  bg-dark  flex justify-center items-center" onClick={() => setshowPopup(false)}>
-          <div className="bg-white p-8  rounded shadow-md w-96" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white text-stone-900 p-8 grid grid-cols-2  rounded shadow-md w-196" onClick={(e) => e.stopPropagation()}>
+            <div>
+            <img src="src/assets/IMG-20250314-WA0338 (1).jpg" alt=""/>
+            </div>
+            <div>
             <h2 className='text-2xl font-bold mb-4 '>Sign up</h2>
             <form onSubmit={handleSubmit} className='y&b form'>
               {/* form username */}
@@ -48,7 +52,7 @@ const Dropdown = () => {
               </div>
               <button type='submit'
                 className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Sign Up</button>
-            </form></div>
+            </form></div></div>
         </div>
       
       )}

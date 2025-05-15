@@ -17,7 +17,7 @@ const W_navigation = () => {
         <div className=" max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className=" flex items-center justify-between h-20">
             <div className=" flex items-center ">
-            <img src="src/assets/bluelogo.png" alt="" className="w-70" />
+            <img src="src/assets/bluelogo.png" alt="logo" className="w-70" />
               <span className="text-xl font-bold text-blue">
                
                 
@@ -40,7 +40,7 @@ const W_navigation = () => {
               </a></Link>
               <Link  to ="/Contact">
               <a
-                href="#"
+                
                 className="text-blue text-xl flex hover:text-blue-500 hover:font-bold transition-colors"
               > <Phone className="size-5 mr-1 mt-1.5"/>
                 Contact Us
@@ -77,7 +77,7 @@ const W_navigation = () => {
             <div className="px-4 pt-2 pb-4 space-y-3 bg">
               <Link to={"/"}>
               <a
-                href="#"
+                
                 className="flex text-gray-300 hover:text-white transition-colors py-2 pl-8   hover:bg-blue-600 rounded-full"
               ><Home className="size-5 mt-1.5 mr-3"/>
                 Home
@@ -85,7 +85,7 @@ const W_navigation = () => {
             <Link to={"/about"}>
               <a
 
-                href="#"
+              
                 className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
               >
                 About Us
@@ -93,7 +93,7 @@ const W_navigation = () => {
               <Link to={"/Contact"}>
               <a
 
-                href="#"
+                
                 className="flex text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
               ><Phone className="size-4 mr-3 mt-1.5"/>
                 Contact Us

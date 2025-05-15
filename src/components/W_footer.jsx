@@ -25,7 +25,7 @@ const W_footer = () => {
     <div className="bg-white   ">
             <div className="md:flex  justify-between ">
             <div className="ml-20">
-              <a href="" className="flex items-center">
+              <a href="#" className="flex items-center">
                  <img src="src/assets/bluelogo.png" alt="" className='relative bottom-16 left-20 size-50' />
               </a>
           </div>
