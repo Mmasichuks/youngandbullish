@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Modal from "../components/Modal.jsx";
 import SignUp from "../components/SignUp.jsx";
 import {
@@ -54,8 +54,8 @@ const logoAnimation = {
 
 function LandingPage() {
   //const [Open, setOpen] = useState(false)
-   const [showPopup, setshowPopup] = useState(false);
-  
+  const [showPopup, setshowPopup] = useState(false);
+
   return (
     <>
 
@@ -119,7 +119,7 @@ function LandingPage() {
             {[
               {
                 icon: TrendingUp,
-                stat: "0",
+                stat: "100+",
                 label: "Success Stories",
               },
               {
@@ -190,7 +190,7 @@ function LandingPage() {
 
 
       <Modal isOpen={showPopup} onClose={() => setshowPopup(false)}>
-        <SignUp/>
+        <SignUp />
       </Modal>
     </>
   );

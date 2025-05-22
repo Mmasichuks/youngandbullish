@@ -28,6 +28,7 @@ const W_footer = () => {
                                 <ul className="flex flex-col gap-4">
                                     <li>
                                         <Link
+
                                             to="/About"
                                             className="block text-blue-900 text-base border-b-2 border-blue-100 pb-1 hover:border-orange-500 transition"
                                         >
@@ -76,12 +77,19 @@ const W_footer = () => {
                         </div>
                         {/* Contact Button */}
                         <div className="flex flex-col items-center md:items-end gap-4 min-w-[180px]">
-                            <a
-                                href="#"
+                            {/* <a
+                                href="/Contact"
                                 className="bg-blue-900 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-800 transition text-base"
                             >
                                 Contact Us
-                            </a>
+                            </a> */}
+                            <Link
+                                to="/Contact"
+                                className="bg-blue-900 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-800 transition text-base"
+                            >
+                                Contact Us
+
+                            </Link>
                         </div>
                     </div>
                     <hr className="my-6 border-blue-900/20" />
