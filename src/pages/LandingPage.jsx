@@ -59,7 +59,7 @@ function LandingPage() {
       <W_navigation />
       <main className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8  pb-16">
         <motion.div
-          className="text-center justify-items-center  mb-12 relative bottom-25"
+          className="text-center justify-items-center  mb-3 relative bottom-25"
           initial={{
             opacity: 0,
             y: 20,
@@ -93,8 +93,8 @@ function LandingPage() {
           <h1 className="text-3xl   sm:text-4xl md:text-6xl font-bold mb-3">
           Young<span className="text-orange-400">and</span>Bullish
           </h1>
-          <p className="text-lg font-p sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
-            Proving you don't need fraud to make it big. Brace yourself are you ready to be young and bullish.
+          <p className="text-lg md:text-xl  text-gray-300 mx-auto pb-12 ">
+           <span className="font-bold text-orange-400">Proving</span> you don't need fraud to make it  <span className="font-bold text-orange-400">Big</span>
           </p>
         
           <Dropdown/>
@@ -127,10 +127,10 @@ function LandingPage() {
      
     >
       <item.icon className="w-8 h-8 text-green-500 mx-auto mb-4" />
-      <div className="text-2xl text-blue sm:text-3xl font-bold mb-2">
+      <div className="text-2xl text-blue  sm:text-3xl font-bold mb-2">
         {item.stat}
       </div>
-      <div className="text-primary">{item.label}</div>
+      <div className="text-blue font-stretch-105% font-semibold">{item.label}</div>
     </motion.div>
   ))}
      

@@ -19,40 +19,22 @@ const Dropdown = () => {
   }
   return (
     <>
-      <motion.button className='bg-green-600 p-2 mt-6 rounded-xl text-2xl'
+      <motion.button className='bg-green-700 p-3 px-5 font-bold mt-6 rounded-xl text-2xl hover:scale-110 hover:bg-green-800'
         whileTap={{scale:.8}}
-        onClick={() => setshowPopup(true)}>Join Community</motion.button>
+        onClick={() => setshowPopup(true)}>Join Our Community</motion.button>
       
       {showPopup && (
         <div className="absolute top-10 left-5 w-full h-full  bg-dark  flex justify-center items-center" onClick={() => setshowPopup(false)}>
-          <div className="bg-white text-stone-900 p-8 grid grid-cols-2  rounded shadow-md w-196" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-gradient-to-t from-gray-400 to-white shadow-gray-800 text-stone-900  flex justify-center rounded-2xl shadow-xl md:w-169 h-120  md:h-80" onClick={(e) => e.stopPropagation()}>
             <div>
-            <img src="src/assets/IMG-20250314-WA0338 (1).jpg" alt=""/>
-            </div>
-            <div>
-            <h2 className='text-2xl font-bold mb-4 '>Sign up</h2>
-            <form onSubmit={handleSubmit} className='y&b form'>
-              {/* form username */}
-              <div className="mb-4">
-                <label className='block text-gray-700 text-sm font-bold mb-2'>Username</label>
-                <input type="text" value={username} onChange={(e) => setusername(e.target.value)}
-                  className=' shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-none' />
+              <X className=' absolute left-220 top-42 shadow-8xl shadow-gray-900 hover:scale-95 bg-gray-300 rounded-2xl size-6'  onClick={() => setshowPopup(false)}/>
+              <img src="src/assets/bluelogo.png" className='size-55 md:absolute top-20 left-62' />
+              <div className="text-container mt-28 ">
+                <h1 className='text-2xl font-bold  '>Want to be part of the YoungandBullish Community? </h1>
+                     <p className='mt-3 text-xl px-12  text-gray-800  font-stretch-extra-condensed '>Kindly fill out the form through the link below to become an official Youngin and hoin the YoungandBullish Community. </p>
+             <button className='bg-dark text-white p-3 px-9 mt-8 not-first:rounded-xl hover:scale-110 hover:rotate-3 shadow-xl shadow-gray-700 focus:bg-dark/95 font-bold'>View Form</button>
               </div>
-              {/* form email */}
-              <div className="mb-4">
-                <label className='block text-gray-700 text-sm font-bold mb-2'>Email</label>
-                <input type="email" value={email} onChange={(e) => setemail(e.target.value)}
-                  className=' shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-none' />
-              </div>
-              {/* form password */}
-              <div className="mb-4">
-                <label className='block text-gray-700 text-sm font-bold mb-2'>Password</label>
-                <input type="password" value={password} onChange={(e) => setpassword(e.target.value)}
-                  className=' shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-none' />
-              </div>
-              <button type='submit'
-                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Sign Up</button>
-            </form></div></div>
+            </div></div>
         </div>
       
       )}

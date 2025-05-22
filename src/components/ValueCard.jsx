@@ -31,7 +31,7 @@ const ValueCard = (props ) => (
     >
     {props.icon && <props.icon className="text-orange-500"/>}
       <h3 className="text-lg text-blue font-semibold mb-2">{props.title}</h3>
-      <p className="text-blue">{props.description}</p>
+      <p className="text-blue">{props.description}.</p>
     </motion.div>
 );
 export default ValueCard;
