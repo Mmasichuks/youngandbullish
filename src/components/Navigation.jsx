@@ -84,9 +84,9 @@ const Navigation = () => {
               <a
 
                 href="#"
-                className="block text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
+                className="flex text-gray-300 hover:text-white transition-colors py-2 pl-8 hover:bg-blue-600 rounded-full"
               >
-                About Us
+                <Users className="size-5 mr-1 mt-1.5" />About Us
               </a> </Link>
             <Link to={"/Contact"}>
               <a
