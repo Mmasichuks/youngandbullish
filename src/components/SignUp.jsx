@@ -1,8 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import ybLogo from '../assets/IMG-20250314-WA0338 (1).jpg';
 import "../style/dialog.css";
-
+import ybLogo from '../assets/IMG-20250314-WA0338 (1).jpg';
 const SignUp = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
@@ -21,6 +20,11 @@ const SignUp = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-3xl shadow-2xl max-w-3xl w-full overflow-hidden">
                 {/* Left Side with background image and logo */}
                 <div className="yb-bg-image relative bg-blue-950 flex flex-col justify-center items-center min-h-[120px] md:min-h-[400px] p-4 md:p-8">
+                    {/* <img
+                        src={ybLogo}
+                        alt="Young & Bullish Logo"
+                        className="relative z-10 max-w-[70%] mx-auto"
+                    /> */}
                 </div>
                 {/* Right Side (Form) */}
                 <div className="p-4 md:p-8 flex flex-col justify-center">

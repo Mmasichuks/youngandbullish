@@ -32,7 +32,7 @@ const Contact = () => {
         <header className="w-full max-w-xl mx-auto flex flex-col items-center">
           <div className="flex items-center mb-4">
             <div
-              className="yb-bg-image rounded-full w-20 h-20 flex items-center justify-center shadow-lg mr-3"
+              className="yb-bg-image2 rounded-full w-20 h-20 flex items-center justify-center shadow-lg mr-3"
               style={{
                 // background:
                 //   "linear-gradient(135deg, oklch(75% 0.183 55.934), oklch(62.7% 0.194 149.214))",

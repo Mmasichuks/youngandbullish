@@ -1,5 +1,5 @@
 /* Example: .yb-bg-image will have a background image */
-.yb-bg-image {
+.yb-bg-image2 {
     background-image: url('../assets/y&b_logo.png'); /* Adjust path as needed */
     background-size: cover;
     background-position: center;
