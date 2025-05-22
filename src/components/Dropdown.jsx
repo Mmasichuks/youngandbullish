@@ -1,24 +1,12 @@
-import React, {useState} from 'react'
-import { ChevronDown, ChevronUp, MoveDiagonal, ShoppingBag, TimerIcon, X } from 'lucide-react'
-import { motion } from 'framer-motion'
-import axios from 'axios'
-
+import React, { useState } from 'react';
+import {User, Users, TrendingUp, ChevronDown, ChevronUp, MoveDiagonal, ShoppingBag, TimerIcon, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 const Dropdown = () => {
   const [showPopup, setshowPopup] = useState(false);
-  const [username, setusername] = useState("");
-  const [email, setemail] = useState("")
-  const [password, setpassword] = useState("")
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", username, email, password);
-    axios.post('', { username, email, password })
-      .then(result => console.log(result))
-    .catch(err => console.log(err))
-    
-  }
   return (
     <>
+ 
       <motion.button className='bg-green-700 p-3 px-5 font-bold mt-6 rounded-xl text-2xl hover:scale-110 hover:bg-green-800'
         whileTap={{scale:.8}}
         onClick={() => setshowPopup(true)}>Join Our Community</motion.button>
@@ -38,8 +26,9 @@ const Dropdown = () => {
         </div>
       
       )}
+  
     </>
-  )
-}
+  );
+};
 
-export default Dropdown
+export default Dropdown;

@@ -1,0 +1,7 @@
+/* Example: .yb-bg-image will have a background image */
+.yb-bg-image {
+    background-image: url('../assets/IMG-20250314-WA0338 (1).jpg'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
