@@ -15,6 +15,8 @@ import W_navigation from "../components/W_navigation.jsx";
 import ValueCard from "../components/ValueCard";
 import Dropdown from "../components/Dropdown";
 import { delay, easeIn, motion } from "framer-motion";
+import LOGO from "../assets/y&b_logo.png";
+
 const fadeInUp = {
   initial: {
     opacity: 0,
@@ -74,7 +76,7 @@ function LandingPage() {
           }}
         >
           
-          <motion.img src="src/assets/y&b_logo.png" alt="y&b logo"
+          <motion.img src={LOGO} alt="y&b logo"
               initial={{y:0}}
               animate={{
                 y: [0, -40, 0,
@@ -123,7 +125,7 @@ function LandingPage() {
     <motion.div
       key={index}
       variants={fadeInUp}
-      className="text-center p-6 sm:p-8 bg-gray-200 shadow-lg shadow-gray-500 backdrop-blur-lg rounded-xl    transition-colors"
+      className="text-center p-6 sm:p-8 bg-gray-300 shadow-lg shadow-gray-500 backdrop-blur-lg rounded-xl    transition-colors"
      
     >
       <item.icon className="w-8 h-8 text-green-500 mx-auto mb-4" />
