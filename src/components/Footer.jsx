@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import SRC from "../assets/ei_1742071493270-removebg-preview (1).png"
+import SRC from "../assets/backgroundOff.png"
 const W_footer = () => {
   return (
     <>
